@@ -1,0 +1,14 @@
+.part1 .logo-f {
+  padding: 0;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.logo--accent-color {
+  color: $accent-color;
+}
+
+.logo--second-color {
+  color: #ffffff;
+}
