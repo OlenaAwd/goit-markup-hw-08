@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -19,8 +19,9 @@
             </a>
     
             <ul class="site-nav">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a> </li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфолио</a></li>
+                <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Студия</a>
+                </li>
+                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
                 <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
     
@@ -42,6 +43,11 @@
                     </a>
                 </li>
             </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use href="./img/svg/8/symbol-defs.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
         </nav>
     </header>
     <main>
@@ -62,7 +68,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex1.jpg" alt="1" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -79,7 +85,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex2.jpg" alt="2" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -95,7 +101,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex3.jpg" alt="3" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -111,7 +117,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex4.jpg" alt="4" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -126,7 +132,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex5.jpg" alt="5" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -142,7 +148,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex6.jpg" alt="6" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -158,7 +164,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex7.jpg" alt="7" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -174,7 +180,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex8.jpg" alt="8" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -190,7 +196,7 @@
                         <li class="example-list__item">
                             <article class="product">
                                 <div class="product__thumb">
-                                    <a href="">
+                                    <a href="" class="product__link">
                                         <img src="./img/ex9.jpg" alt="9" width="370">
                                     </a>
                                     <p class="product__text-description">Технокряк это современная площадка распространения
@@ -215,7 +221,7 @@
         <div class="footer-container">
             <div class="part1">
                 <a href="./index.html" class="logo-f">
-                    <p><span class="logo-accent">Web</span><span class="logo-footer">Studio</span></p>
+                    <p><span class="logo--accent-color">Web</span><span class="logo--second-color">Studio</span></p>
                 </a>
                 <address> г. Киев, пр-т Леси Украинки, 26</address>
                 <ul class="part1__footer-list">
@@ -231,28 +237,28 @@
                     <li class="part2__sl-item">
                         <a href="" class="part2__sl-box">
                             <svg class="part2__sl-icon">
-                                <use href="./img/sprite.svg#icon-instagram-2-1"></use>
+                                <use href="./img/svg/8/symbol-defs.svg#icon-instagram-2-1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="part2__sl-item">
                         <a href="" class="part2__sl-box">
                             <svg class="part2__sl-icon">
-                                <use href="./img/sprite.svg#icon-twitter-1-1"></use>
+                                <use href="./img/svg/8/symbol-defs.svg#icon-twitter-1-1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="part2__sl-item">
                         <a href="" class="part2__sl-box">
                             <svg class="part2__sl-icon">
-                                <use href="./img/sprite.svg#icon-facebook-1-1"></use>
+                                <use href="./img/svg/8/symbol-defs.svg#icon-facebook-1-1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="part2__sl-item">
                         <a href="" class="part2__sl-box">
                             <svg class="part2__sl-icon">
-                                <use href="./img/sprite.svg#icon-linkedin-1-1"></use>
+                                <use href="./img/svg/8/symbol-defs.svg#icon-linkedin-1-1"></use>
                             </svg>
                         </a>
                     </li>
@@ -267,14 +273,14 @@
                     <button type="submit" class="part3__button-subscribe"><span
                             class="part3__text-button">Подписаться</span>
                         <svg class="part3__icon-send">
-                            <use href="./img/symbol-defs.svg#icon-icon-send">
+                            <use href="./img/svg/8/symbol-defs.svg#icon-icon-send">
                             </use>
                         </svg>
                     </button>
                 </form>
             </div>
         </div>
-
+    
     </footer>
 </body>
 
